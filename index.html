@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>人生进度条</title>
+    <link rel="icon" href="./imgs/person.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="./imgs/person.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/index.css">
+    <script type="text/javascript" src="./jquery/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+    <style id="s"></style>
+    <style id="ss"></style>
+</head>
+
+<body>
+    <div id="time">
+        <span id="year"></span>年
+        <span id="month"></span>月
+        <span id="day"></span>日
+        <span id="hour"></span>:
+        <span id="minute"></span>:
+        <span id="second"></span> 星期
+        <span id="week"></span>
+    </div>
+
+    <div id="timeTextDiv">
+        “花有重开日，人无再少年”
+    </div>
+
+    <div>
+        <ul id="skill">
+            <li><span class="bar today" id="today"></span>
+                <h3 id="todayText"></h3>
+            </li>
+            <li><span class="bar thisweek" id="thisweek"></span>
+                <h3 id="weekText"></h3>
+            </li>
+            <li><span class="bar thismonth" id="thismonth"></span>
+                <h3 id="monthText"></h3>
+            </li>
+            <li><span class="bar thisyear" id="thisyear"></span>
+                <h3 id="yearText"></h3>
+            </li>
+            <li><span class="bar thislife" id="thislife"></span>
+                <h3 id="lifeText">一生已过25.26%</h3>
+            </li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>
+            &copy;2023 Created By Yaookie
+        </p>
+    </footer>
+
+    <!-- <div id="bottomDiv">
+        <div for="dateofbirth">请选择生日</div>
+        <input type="date" name="dateofbirth" id="dateofbirth" onchange="freshLife()">
+    </div> -->
+</body>
+
+</html>
